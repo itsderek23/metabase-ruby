@@ -8,6 +8,8 @@ module Metabase
     include Connection
     include Endpoint
 
+    attr_reader :token
+
     def initialize(url:, username: nil, password: nil, token: nil)
       @url = url
       @username = username
